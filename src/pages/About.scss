@@ -1,0 +1,105 @@
+.about-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #071b12, #123d25, #0b2b1b);
+  color: #ffffff;
+  padding-bottom: 60px;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 75px 8% 45px;
+
+  .section-tag {
+    color: #b7ff7a;
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-size: 48px;
+    color: #7dff8a;
+    margin-bottom: 18px;
+  }
+
+  p {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #d7f5df;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 30px 8%;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.11);
+  padding: 30px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+
+  h2 {
+    color: #b7ff7a;
+    margin-bottom: 18px;
+  }
+
+  p {
+    color: #d7f5df;
+    line-height: 1.7;
+  }
+
+  ul {
+    padding-left: 20px;
+
+    li {
+      color: #d7f5df;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.tech-section {
+  padding: 45px 8%;
+  text-align: center;
+
+  h2 {
+    color: #b7ff7a;
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+
+  div {
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(125, 255, 138, 0.12);
+    border: 1px solid rgba(125, 255, 138, 0.25);
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-content,
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero {
+    h1 {
+      font-size: 34px;
+    }
+  }
+}
